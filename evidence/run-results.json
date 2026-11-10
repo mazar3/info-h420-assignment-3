@@ -117,5 +117,20 @@
     "search_unrelated_visible_papers": 0,
     "empty_search_visible_papers": 2,
     "discord_messages_seen": 2
+  },
+  "markdown_characters": {
+    "attention.pdf.md": 40900,
+    "rag.pdf.md": 76026
+  },
+  "google_drive_check": {
+    "method": "Google Drive for desktop UI",
+    "result": "Up to date",
+    "uploaded_files": [
+      "papers/attention.pdf",
+      "papers/rag.pdf",
+      "output/index.html"
+    ],
+    "local_folder": "ResearchLibrary on external SSD",
+    "database_synced": false
   }
 }
