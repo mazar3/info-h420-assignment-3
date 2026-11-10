@@ -1,0 +1,39 @@
+[
+  {
+    "filename": "attention.pdf",
+    "title": "Attention Is All You Need",
+    "summary": "This paper introduces the Transformer, a novel neural network architecture that relies solely on attention mechanisms to model dependencies between input and output sequences. Unlike traditional recurrent or convolutional neural networks, the Transformer does not use recurrence or convolutions, instead employing self-attention to achieve superior translation quality and reduced training time. The authors demonstrate the Transformer's effectiveness on two machine translation tasks, achieving new state-of-the-art BLEU scores. The paper also discusses the design and implementation of the Transformer, including its multi-head attention mechanism and position-wise feed-forward networks.",
+    "keywords": [
+      "Transformer",
+      "attention mechanism",
+      "machine translation",
+      "sequence modeling",
+      "recurrent neural networks",
+      "convolutional neural networks",
+      "self-attention",
+      "multi-head attention",
+      "position-wise feed-forward networks"
+    ],
+    "category": "Neural Networks and Deep Learning",
+    "notified": 1
+  },
+  {
+    "filename": "rag.pdf",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "summary": "This paper explores the use of retrieval-augmented generation (RAG) for knowledge-intensive natural language processing tasks. RAG combines a pre-trained sequence-to-sequence model with a dense vector index of Wikipedia, accessed via a pre-trained neural retriever. The authors introduce two RAG formulations: one that uses the same retrieved document for each output token and another that can use different documents per token. They evaluate their models on open-domain question answering, abstractive question answering, Jeopardy question generation, and fact verification tasks. The models achieve state-of-the-art results on open-domain QA and outperform parametric seq2seq models and task-specific architectures. For abstractive generation, RAG models generate more specific, diverse, and factual text than a state-of-the-art parametric-only seq2seq baseline. For Jeopardy question generation, RAG models outperform BART in Q-BLEU-1 metric, demonstrating their effectiveness in generating precise, factual statements. The paper also highlights the benefits of combining parametric and non-parametric memory with generation for knowledge-intensive tasks.",
+    "keywords": [
+      "Retrieval-Augmented Generation",
+      "Knowledge-Intensive NLP Tasks",
+      "Sequence-to-Sequence Models",
+      "Wikipedia Index",
+      "Neural Retriever",
+      "Open-Domain QA",
+      "Abstractive Question Answering",
+      "Jeopardy Question Generation",
+      "Fact Verification",
+      "Natural Language Generation"
+    ],
+    "category": "Natural Language Processing",
+    "notified": 1
+  }
+]

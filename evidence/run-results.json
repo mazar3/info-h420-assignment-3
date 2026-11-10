@@ -1,0 +1,121 @@
+{
+  "verified_at": "2026-11-10",
+  "timezone": "UTC for Airflow timestamps",
+  "airflow": "3.1.0",
+  "model": "qwen2.5:3b",
+  "runs": [
+    {
+      "run_id": "scheduled__2026-11-10T16:00:00+00:00",
+      "state": "success",
+      "start_date": "2026-11-10 16:05:04.550677",
+      "end_date": "2026-11-10 16:10:54.569645",
+      "tasks": [
+        {
+          "task_id": "build_library",
+          "state": "success",
+          "try_number": 1,
+          "duration": 0.101
+        },
+        {
+          "task_id": "convert_to_markdown",
+          "state": "success",
+          "try_number": 1,
+          "duration": 11.457
+        },
+        {
+          "task_id": "discover_pdfs",
+          "state": "success",
+          "try_number": 1,
+          "duration": 1.78
+        },
+        {
+          "task_id": "generate_metadata",
+          "state": "success",
+          "try_number": 2,
+          "duration": 136.094
+        },
+        {
+          "task_id": "notify_discord",
+          "state": "success",
+          "try_number": 1,
+          "duration": 1.759
+        },
+        {
+          "task_id": "save_metadata",
+          "state": "success",
+          "try_number": 1,
+          "duration": 0.169
+        }
+      ],
+      "counts": {
+        "discover_pdfs": 2,
+        "convert_to_markdown": 2,
+        "generate_metadata": 2,
+        "save_metadata": 2,
+        "build_library": 2,
+        "notify_discord": 2
+      }
+    },
+    {
+      "run_id": "group33_first_run",
+      "state": "success",
+      "start_date": "2026-11-10 16:10:55.592579",
+      "end_date": "2026-11-10 16:11:01.404614",
+      "tasks": [
+        {
+          "task_id": "build_library",
+          "state": "success",
+          "try_number": 1,
+          "duration": 0.143
+        },
+        {
+          "task_id": "convert_to_markdown",
+          "state": "success",
+          "try_number": 1,
+          "duration": 0.082
+        },
+        {
+          "task_id": "discover_pdfs",
+          "state": "success",
+          "try_number": 1,
+          "duration": 0.085
+        },
+        {
+          "task_id": "generate_metadata",
+          "state": "success",
+          "try_number": 1,
+          "duration": 0.117
+        },
+        {
+          "task_id": "notify_discord",
+          "state": "success",
+          "try_number": 1,
+          "duration": 0.158
+        },
+        {
+          "task_id": "save_metadata",
+          "state": "success",
+          "try_number": 1,
+          "duration": 0.104
+        }
+      ],
+      "counts": {
+        "discover_pdfs": 0,
+        "convert_to_markdown": 0,
+        "generate_metadata": 0,
+        "save_metadata": 0,
+        "build_library": 2,
+        "notify_discord": 0
+      }
+    }
+  ],
+  "database_rows": 2,
+  "notified_rows": 2,
+  "note": "Initial scheduled run required the documented macOS no_proxy setting and a retry of generate_metadata. Both completed runs are real Airflow standalone runs using local Ollama and the actual Discord webhook.",
+  "browser_checks": {
+    "search_retrieval_visible_papers": 1,
+    "search_unrelated_visible_papers": 0,
+    "empty_search_visible_papers": 2,
+    "discord_messages_seen": 2
+  }
+}
